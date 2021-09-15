@@ -1,7 +1,7 @@
 import { Global, Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { Account } from 'src/accounts/entities/account.entity';
-import { TenantService } from './tenant/tenant.service';
+import { TenantService } from './tenant.service';
 
 @Global()
 @Module({
