@@ -20,3 +20,12 @@ services:
     environment: 
       - MYSQL_DATABASE=fin
       - MYSQL_ROOT_PASSWORD=root
+
+  auth:
+    image: jboss/keycloak
+    environment: 
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+      - DB_VENDOR=h2
+    ports: 
+      - 8080:8080
